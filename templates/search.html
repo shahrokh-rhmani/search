@@ -1,6 +1,14 @@
+{% extends '_base.html' %}
 {% block title %}Search Page{% endblock %}
 
 
 {% block content %}
   <h1>Search Page</h1>
+  <ul>
+    {% for city in search_list %}
+      <li>
+        {{city.name}}, {{city.country}}
+      </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
