@@ -12,4 +12,5 @@ class HomePage(TemplateView):
 
 class SearchResultView(ListView):
     model = City
-    template_name = 'search.html'   
+    context_object_name = 'search_list'
+    template_name = 'search.html'
