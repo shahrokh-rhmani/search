@@ -6,4 +6,8 @@
 {% block content %}
   <h1>Home Page</h1>
 
+  <form class="" action="{% url 'search' %}" method="get">
+    <input type="text" name="q" value="" placeholder="Search...">
+  </form>
+
 {% endblock %}
